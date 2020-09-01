@@ -33,14 +33,21 @@ while player == False:
                 print('What units would you like to open with?')
                 tUnits = input('Marine, Marauder, Reaper? ')
                 print('You have decided to open up with a ', tUnits, ".")
+                if tUnits != "Marine" == "Marauder" == "Reaper":
+                    print("That's not a valid option. Choose another option.")
+                    firstchoice == False
             elif firstchoice == 'Upgrades':
                 print('What upgrades would you like to open with? ')
-                tUpgrades == input('Special Upgrades, Weapon, Armor')
+                tUpgrades == input('Special Upgrades, Weapon, Armor? ')
                 print('You have decided to invest in ', tUpgrades, '.')
+                if tUpgrades != "Special Upgrades" == "Weapon" == "Armor":
+                    print("That's not a valid option. Choose another option.")
+                    firstchoice == False
             elif firstchoice == 'Economy':
                 print('You have decided to invest in economy and purchased a gas structure.')
             else:
                 print("That's not a valid option. Choose another option.")
+                firstchoice == False
         #firstchoice was set to True but we want it to be False so the loop continues
         firstchoice == False 
 

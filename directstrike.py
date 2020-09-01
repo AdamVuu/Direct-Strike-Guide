@@ -24,6 +24,7 @@ while player == False:
     if player == "Terran":
         print("Your race is ", player,  ".")  
         print("You will be playing against a ", computer,  ".")
+
     elif player == "Protoss":
         print("Your race is ", player,  ".")  
         print("You will be playing against a ", computer, ".")
@@ -32,3 +33,6 @@ while player == False:
         print("You will be playing against a ", computer, ".")
     else:
         print("That's not a valid race. Pick a race.")
+    #player was set to True, but we want it to be False so the loop continues
+    player = False
+    computer = race[randint(0, 2)]

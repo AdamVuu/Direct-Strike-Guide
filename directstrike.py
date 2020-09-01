@@ -24,18 +24,18 @@ while player == False:
     if player == "Terran":
         print("Your race is ", player,  ".")  
         print("You will be playing against a ", computer,  ".")
+        print('what will you open the game with?')
         firstchoice = False
         while firstchoice == False:
         #set firstchoice to True
-            print('what will you open the game with?')
-            firstchoice = input('Units', 'Upgrades','Economy? ')
+            firstchoice = input('Units, Upgrades, Economy? ')
             if firstchoice == 'Units':
                 print('What units would you like to open with?')
-                tUnits = input('Marine', 'Marauder', 'Reaper? ')
+                tUnits = input('Marine, Marauder, Reaper? ')
                 print('You have decided to open up with a ', tUnits, ".")
             elif firstchoice == 'Upgrades':
                 print('What upgrades would you like to open with? ')
-                tUpgrades == input('Special Upgrades', 'Weapon', 'Armor')
+                tUpgrades == input('Special Upgrades, Weapon, Armor')
                 print('You have decided to invest in ', tUpgrades, '.')
             elif firstchoice == 'Economy':
                 print('You have decided to invest in economy and purchased a gas structure.')

@@ -24,7 +24,7 @@ while player == False:
     if player == "Terran":
         print("Your race is ", player,  ".")  
         print("You will be playing against a ", computer,  ".")
-        print('what will you open the game with?')
+        print('What will you open the game with?')
         firstchoice = False
         while firstchoice == False:
         #set firstchoice to True
@@ -50,8 +50,6 @@ while player == False:
                 firstchoice == False
         #firstchoice was set to True but we want it to be False so the loop continues
         firstchoice == False 
-
-
     elif player == "Protoss":
         print("Your race is ", player,  ".")  
         print("You will be playing against a ", computer, ".")
@@ -61,11 +59,19 @@ while player == False:
     elif player == "Zerg":
         print("Your race is ", player,  ".")  
         print("You will be playing against a ", computer, ".")
-        firstchoice = False
-        player = input('Terran, Protoss, Zerg? ')
+        print('What will you open the game with?')
+        firstchoice = input('Units, Upgrades, Economy? ')
+        if firstchoice == 'Units':
+            print('What units would you like to open with?')
+            zUnits = input('Zergling, Baneling, Roach, Queen?')
+            print('You have decided to open with a', zUnits, '.')
+            if zUnits != 'Zergling' == 'Baneling' == 'Roach' == 'Queen':
+                print("That's not a valid option. Choose another option.")
+                firstchoice == False
+        
         print('what will you open the game with?')
     else:
         print("That's not a valid race. Pick a race.")
     #player was set to True, but we want it to be False so the loop continues
-    player = False
-    computer = race[randint(0, 2)]
+    #player = False
+    #computer = race[randint(0, 2)]

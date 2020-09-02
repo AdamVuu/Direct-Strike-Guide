@@ -67,9 +67,13 @@ while player == False:
             print('You have decided to open with a', zUnits, '.')
             if zUnits != 'Zergling' == 'Baneling' == 'Roach' == 'Queen':
                 print("That's not a valid option. Choose another option.")
-                firstchoice == False
-        
-        print('what will you open the game with?')
+                #firstchoice == False
+        elif firstchoice == 'Upgrades':
+            print('What upgrades would you like to open with?')
+            zUpgrades = input('Special, Weapons, Armor? ')
+            print('You have decided to open with', zUpgrades, '.')
+            if zUpgrades != 'Special' == 'Weapons' == 'Armor':
+                print("That's not a valid option. Choose another option.")
     else:
         print("That's not a valid race. Pick a race.")
     #player was set to True, but we want it to be False so the loop continues

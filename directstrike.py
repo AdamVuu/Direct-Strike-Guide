@@ -53,8 +53,6 @@ while player == False:
     elif player == "Protoss":
         print("Your race is ", player,  ".")  
         print("You will be playing against a ", computer, ".")
-        firstchoice = False
-        player = input('Terran, Protoss, Zerg? ')
         print('What will you open the game with?')
         firstchoice = input('Units, Upgrades, Economy? ')
         if firstchoice == 'Units':

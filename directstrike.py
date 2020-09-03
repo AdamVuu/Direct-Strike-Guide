@@ -55,7 +55,24 @@ while player == False:
         print("You will be playing against a ", computer, ".")
         firstchoice = False
         player = input('Terran, Protoss, Zerg? ')
-        print('what will you open the game with?')
+        print('What will you open the game with?')
+        firstchoice = input('Units, Upgrades, Economy? ')
+        if firstchoice == 'Units':
+            print('What units would you like to open with?')
+            pUnits = input('Zealot, Stalker, Sentry? ')
+            print('You have decided to open with a', pUnits, '.')
+            if pUnits != 'Zealot' == 'Stalker' == 'Sentry':
+                print("That's not a valid option. Choose another option.")
+                #firstchoice == False
+        elif firstchoice == 'Upgrades':
+            print('What upgrades would you like to open with?')
+            zUpgrades = input('Special, Weapons, Armor? ')
+            print('You have decided to open with', zUpgrades, 'upgrades.')
+            if zUpgrades != 'Special' == 'Weapons' == 'Armor':
+                print("That's not a valid option. Choose another option.")
+        elif firstchoice == 'Economy':
+            print('You have opened with an economy structure.')
+            print('Your income has increased by xx. You can not place another gas structure down for 4 turns.')
     elif player == "Zerg":
         print("Your race is ", player,  ".")  
         print("You will be playing against a ", computer, ".")

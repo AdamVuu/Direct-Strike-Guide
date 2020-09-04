@@ -16,7 +16,9 @@ p1Units = ['Zealot', 'Adept', 'Stalker', 'Sentry']
 p2Units = ['Dark Templar', 'High Templar', 'Archon', 'Warp Prism', 'Observer', 'Immortal', 'Disruptor','Phoenix', 'Oracle', 'Void Ray']
 p3Units = ['Colossus', 'Carrier', 'Tempest']
 
-
+z1Units = ['Zergling', 'Baneling', 'Roach', 'Ravager', 'Queen']
+z2Units = ['Hydralisk', 'Lurker', 'Mutalisk', 'Corruptor', 'Infestor', 'Overseer']
+z3Units = ['Viper', 'Utralisk', 'Brood Lord']
 
 #asks for player name
 print('What is your name?')

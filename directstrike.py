@@ -8,6 +8,9 @@ race = ['Terran', 'Protoss', 'Zerg']
 #assign a random race to the computer
 computer = race[randint(0,2)]
 
+t1Units = ['Marine', 'Marauder', 'Reaper']
+t2Units = ['Ghost', 'Hellion', 'Hellbat', 'Siege Tank', 'Viking', 'Medivac', 'Banshee', 'Raven', 'Liberator' 'Widow Mine', 'Cyclone', ]
+t3Units = ['Thor', 'Battlecruiser']
 
 #asks for player name
 print('What is your name?')

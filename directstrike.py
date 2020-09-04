@@ -12,6 +12,12 @@ t1Units = ['Marine', 'Marauder', 'Reaper']
 t2Units = ['Ghost', 'Hellion', 'Hellbat', 'Siege Tank', 'Viking', 'Medivac', 'Banshee', 'Raven', 'Liberator' 'Widow Mine', 'Cyclone', ]
 t3Units = ['Thor', 'Battlecruiser']
 
+p1Units = ['Zealot', 'Adept', 'Stalker', 'Sentry']
+p2Units = ['Dark Templar', 'High Templar', 'Archon', 'Warp Prism', 'Observer', 'Immortal', 'Disruptor','Phoenix', 'Oracle', 'Void Ray']
+p3Units = ['Colossus', 'Carrier', 'Tempest']
+
+
+
 #asks for player name
 print('What is your name?')
 myName = input()

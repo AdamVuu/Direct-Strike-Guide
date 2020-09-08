@@ -9,14 +9,35 @@ race = ['Terran', 'Protoss', 'Zerg']
 computer = race[randint(0,2)]
 
 
+
+
+
+
+
+
+
+
+
+
+
+t1Upgrades = ['Infantry Weapons 1', 'Infantry Armor 2', 'Stimpack', 'Concussive Shells']
+t2Upgrades = ['Infantry Weapons 2', 'Infantry Armor 2', 'Vehicle Weapons 1', 'Vehicle Weapons 2', 'Ship Weapons 1', 'Ship Weapons 2', 'Vehicle/Ship Armor 1,' 'Vehicle/Ship Armor 2', 'Infernal Pre-lighter,' 'Raven Energy', 'Medevac Boosters']
+t3Upgrades =
+
+p1Upgrades = ['Ground Weapons 1', 'Ground Armor 1', 'Shields 1', ]
+p2Upgrades =
+p3Upgrades =
+
+z1Upgrades = ['Melee Attacks 1', 'Missile Attacks 1', 'Ground Carapace 1', 'Metabolic Boost', 'Pneumatized Carapace']
+z2Upgrades = 
+z3Upgrades = 
+
 #asks for player name
 print('What is your name?')
 myName = input()
 
 #asks for player race
 print('Hi {}, what race will you be playing as? ' .format(myName))
-
-
 
 #set player to False
 player = False

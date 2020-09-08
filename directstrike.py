@@ -16,6 +16,8 @@ myName = input()
 #asks for player race
 print('Hi {}, what race will you be playing as? ' .format(myName))
 
+
+
 #set player to False
 player = False
 while player == False:

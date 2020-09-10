@@ -3,10 +3,12 @@
 from random import randint
 
 #create a list of race options
-race = ['Terran', 'Protoss', 'Zerg']
+race_list = ['Terran', 'Protoss', 'Zerg']
 
 #assign a random race to the computer
-computer = race[randint(0,2)]
+computer = race_list[randint(0,2)]
+
+options_list = ['Units', 'Upgrades', 'Economy']
 
 t1Units_list = ['Marine', 'Marauder', 'Reaper']
 t2Units_list = ['Ghost', 'Hellion', 'Hellbat', 'Siege Tank', 'Viking', 'Medivac', 'Banshee', 'Raven', 'Liberator' 'Widow Mine', 'Cyclone', ]
@@ -43,7 +45,7 @@ print('Hi {}, what race will you be playing as? ' .format(myName))
 player = False
 while player == False:
 #set player to True
-    player = input('Terran, Protoss, Zerg? ')
+    player = input(race_list)
     if player == "Terran":
         print("Your race is ", player,  ".")  
         print("You will be playing against a ", computer,  ".")
@@ -51,7 +53,7 @@ while player == False:
         firstchoice = False
         while firstchoice == False:
         #set firstchoice to True
-            firstchoice = input('Units, Upgrades, Economy? ')
+            firstchoice = input(options_list)
             if firstchoice == 'Units':
                 print('What units would you like to open with?')
                 tUnits = input('Marine, Marauder, Reaper? ')

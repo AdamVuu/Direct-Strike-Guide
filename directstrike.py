@@ -20,28 +20,17 @@ z1Units = ['Zergling', 'Baneling', 'Roach', 'Ravager', 'Queen']
 z2Units = ['Hydralisk', 'Lurker', 'Mutalisk', 'Corruptor', 'Infestor', 'Overseer']
 z3Units = ['Viper', 'Utralisk', 'Brood Lord']
 
-
-
-
-
-
-
-
-
-
-
-
 t1Upgrades = ['Infantry Weapons 1', 'Infantry Armor 2', 'Stimpack', 'Concussive Shells']
 t2Upgrades = ['Infantry Weapons 2', 'Infantry Armor 2', 'Vehicle Weapons 1', 'Vehicle Weapons 2', 'Ship Weapons 1', 'Ship Weapons 2', 'Vehicle/Ship Armor 1,' 'Vehicle/Ship Armor 2', 'Infernal Pre-lighter,' 'Raven Energy', 'Medevac Boosters']
-t3Upgrades =
+#t3Upgrades =
 
 p1Upgrades = ['Ground Weapons 1', 'Ground Armor 1', 'Shields 1', ]
-p2Upgrades =
-p3Upgrades =
+#p2Upgrades =
+#p3Upgrades =
 
 z1Upgrades = ['Melee Attacks 1', 'Missile Attacks 1', 'Ground Carapace 1', 'Metabolic Boost', 'Pneumatized Carapace']
-z2Upgrades = 
-z3Upgrades = 
+#z2Upgrades = 
+#z3Upgrades = 
 
 #asks for player name
 print('What is your name?')
@@ -84,6 +73,7 @@ while player == False:
                 firstchoice == False
         #firstchoice was set to True but we want it to be False so the loop continues
         firstchoice == False 
+
     elif player == "Protoss":
         print("Your race is ", player,  ".")  
         print("You will be playing against a ", computer, ".")
@@ -105,6 +95,7 @@ while player == False:
         elif firstchoice == 'Economy':
             print('You have opened with an economy structure.')
             print('Your income has increased by xx. You can not place another gas structure down for 4 turns.')
+
     elif player == "Zerg":
         print("Your race is ", player,  ".")  
         print("You will be playing against a ", computer, ".")
